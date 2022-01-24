@@ -1,12 +1,12 @@
 
-import React, {Component} from "react";
+import React from "react";
 
-export default class AddPost extends Component {
-    render () {
+function AddPost (props) {
+
         return (
             <div>
-                <button onClick={this.props.addPostHandler}> Add Post</button>
+                <button onClick={props.addPostHandler}> Add Post</button>
             </div>
         )
-    }
 }
+export default AddPost
